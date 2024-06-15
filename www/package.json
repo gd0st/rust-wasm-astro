@@ -1,0 +1,21 @@
+{
+	"name": "astro-wasm",
+	"type": "module",
+	"version": "0.0.1",
+	"bin": {
+		"create-wasm-app": ".bin/create-wasm-app.js"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"astro": "^4.10.2",
+		"vite-plugin-top-level-await": "^1.4.1",
+		"vite-plugin-wasm": "^3.3.0",
+		"wasm-game-of-life": "file:../pkg"
+	}
+}
